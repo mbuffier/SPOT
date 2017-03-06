@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efefef"
+    android:orientation="vertical" 
+    tools:context="com.example.marieanne.spot.Evenement" >
+<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/titreEvenement"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:ems="10"
+        android:textStyle="bold"
+        android:textColor="#6D071A"
+        android:textSize="25sp" />
+
+
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="65dp"
+        android:layout_height="49dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/boutonrond"
+        android:gravity="center"
+        android:padding="2dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/utilisa" />
+
+  
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/motCle"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:ems="10"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="421dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageEvent"
+                android:layout_width="match_parent"
+                android:layout_height="186dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/amsterdam" />
+
+            
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_marginTop="10dp"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.09"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/descriptionEvent" />
+        </LinearLayout>
+        
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#efefef"
+         >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:text="@string/info"
+            android:textColor="#efefef"
+            android:background="#2b2b2b" />
+        
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="106dp"
+            android:layout_height="match_parent"
+            android:text="@string/prix"
+            android:textColor="#efefef"
+            android:background="#2b2b2b" />
+        
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
+            android:text="@string/lieu"
+            android:textColor="#efefef"
+            android:background="#2b2b2b" />
+        
+    </LinearLayout>
+
+   
+</LinearLayout>
